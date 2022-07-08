@@ -29,8 +29,8 @@ class Ridgingsheet extends React.Component {
       <div>
         <div className="container">
           
-          <Col md={12} className="display-6 mx-auto ">
-            <p className="text-center mt-2">Cash memo(Ridging)</p>
+          <Col md={12} className="h5 mx-auto ">
+            <p className="text-center mt-2">Cash memo: Ridging</p>
           </Col>
           
 
