@@ -37,7 +37,7 @@ class Formsheet extends React.Component {
 
 
           <Form className="my-2" onSubmit={this.handleSubmit}>
-            <Row> <Col md={3}><FormGroup>
+            <Row> <Col md={3} xs={6}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
                   <Input
                     id="examplepieces"
@@ -48,7 +48,7 @@ class Formsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={3}>
+              <Col md={3} xs={6}>
                 <FormGroup>
                   <Label for="examplefeet">Feet</Label>
                   <Input
@@ -60,7 +60,7 @@ class Formsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={3}>
+              <Col md={3} xs={6}>
                 <FormGroup>
                   <Label for="examplebundle">Bundle</Label>
                   <Input
@@ -72,13 +72,13 @@ class Formsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <FormGroup>
                   <Label for="exampleprice">Price</Label>
                   <Input id="exampleprice" name="price" value={this.state.price} />
                 </FormGroup>
               </Col>
-              <Col md={1}>
+              <Col md={1} >
                 
                   <Label for="exampleprice"></Label>
                 <Button type='submit'>Add more</Button>

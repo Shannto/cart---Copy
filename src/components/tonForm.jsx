@@ -55,7 +55,7 @@ class Tonsheet extends React.Component {
 
 
           <Form className="my-2" onSubmit={this.handleSubmit}>
-            <Row> <Col md={2}><FormGroup>
+            <Row> <Col md={2} xs={6}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
                   <Input
                     id="examplepieces"
@@ -66,7 +66,7 @@ class Tonsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <FormGroup>
                   <Label for="examplefeet">Feet</Label>
                   <Input
@@ -78,7 +78,7 @@ class Tonsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <FormGroup>
                   <Label for="examplemm">M.M.</Label>
                   <Input
@@ -90,7 +90,7 @@ class Tonsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <FormGroup>
                   <Label for="examplebundle">Ton</Label>
                   <Input
@@ -102,23 +102,24 @@ class Tonsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <FormGroup>
                   <Label for="exampleprice">Price</Label>
                   <Input id="exampleprice" name="price" value={this.state.price} />
                 </FormGroup>
               </Col>
-              <Col md={2}>
-                
-                  <Label for="exampleprice"></Label>
-                <Button type='submit'>Add more</Button>
-
+              <Col md={2} xs={6}>
                 <FormGroup>
                   <Label for="exampledivisor">Divisor</Label>
                   <Input id="exampledivisor" name="divisor" value={this.state.divisor} />
                 </FormGroup>
                 
-              </Col></Row></Form></div></div>)}
+              </Col>
+              <Col md={2}>
+                <Label for="exampleprice"></Label>
+                <Button type='submit'>Add more</Button>
+              </Col>
+                </Row></Form></div></div>)}
 }
 
 export default Tonsheet;

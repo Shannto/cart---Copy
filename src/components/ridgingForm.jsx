@@ -37,7 +37,7 @@ class Ridgingsheet extends React.Component {
 
 
           <Form className="my-2" onSubmit={this.handleSubmit}>
-            <Row> <Col md={2}><FormGroup>
+            <Row> <Col md={2} xs={4}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
                   <Input
                     id="examplepieces"
@@ -48,7 +48,7 @@ class Ridgingsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={2}><FormGroup>
+              <Col md={2} xs={4}><FormGroup>
                   <Label for="examplemm">M.M.</Label>
                   <Input
                     id="examplemm"
@@ -59,7 +59,7 @@ class Ridgingsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={3}>
+              <Col md={3} xs={4}>
                 <FormGroup>
                   <Label for="exampleunit">Unit Prices</Label>
                   <Input
