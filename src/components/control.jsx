@@ -2,6 +2,7 @@ import React from 'react';
 import Formsheet from './form'
 import Tonsheet from './tonForm';
 import Ridgingsheet from './ridgingForm';
+import {Button} from 'reactstrap'
 
 class Control extends React.Component{
     state={
@@ -29,6 +30,8 @@ class Control extends React.Component{
                     <input type="radio" name="tonS" onChange={this.handleRadio} checked={this.state.tonS} className='mx-2' />Ton
 
                     <input type="radio" name="ridgingS" onChange={this.handleRadio} checked={this.state.ridgingS} className='mx-2' />Ridging
+
+                    <Button onClick={this.props.resetForm} className="mx-2 btn-danger btn-sm"> Reset</Button>
 
                     
 

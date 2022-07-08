@@ -8,6 +8,7 @@ import Tonsheet from './tonForm';
 import { Row, Label, Input, Form, FormGroup, Col, Container,Button } from "reactstrap";
 import Control from './control';
 
+
 class Index extends Component {
    state={todos:[
     {
@@ -18,6 +19,7 @@ class Index extends Component {
     tonS:false,
     ridgingS:false
   }
+  
    createTodo=todo=>{
     todo.id= shortid.generate();
     const todos=[todo, ...this.state.todos];
@@ -37,12 +39,27 @@ class Index extends Component {
     })
   }
 
+  resetForm=(event)=>{
+    this.setState({
+      todos:[
+        {
+           
+        }],
+        total:0,
+        bundleS:true,
+        tonS:false,
+        ridgingS:false
+      
+    })
+  }
+
   render() {
     return (
       <div>
         
           
-        <Control createTodo={this.createTodo}/>
+        <Control createTodo={this.createTodo} resetForm={this.resetForm} />
+
 
         {/* <Controller bundleS={this.state.bundleS} tonS={this.state.tonS} ridgingS={this.state.ridgingS} handleRadio={this.handleRadio} /> */}
         
