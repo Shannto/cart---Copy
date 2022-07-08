@@ -30,9 +30,10 @@ class Control extends React.Component{
 
                     <input type="radio" name="ridgingS" onChange={this.handleRadio} checked={this.state.ridgingS} className='mx-2' />Ridging
 
-                    <br />
+                    
 
                     <div>
+                        <br />
                         {this.state.bundleS? <Formsheet createTodo={this.props.createTodo}/>:null}
 
                         {this.state.tonS? <Tonsheet

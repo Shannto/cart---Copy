@@ -33,9 +33,6 @@ class Ridgingsheet extends React.Component {
             <p className="text-center mt-2">Cash memo: Ridging</p>
           </Col>
           
-
-
-
           <Form className="my-2" onSubmit={this.handleSubmit}>
             <Row> <Col md={2} xs={4}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>

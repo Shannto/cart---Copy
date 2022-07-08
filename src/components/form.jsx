@@ -37,18 +37,8 @@ class Formsheet extends React.Component {
 
 
           <Form className="my-2" onSubmit={this.handleSubmit}>
-            <Row> <Col md={3} xs={6}><FormGroup>
-                  <Label for="examplepieces">Pieces</Label>
-                  <Input
-                    id="examplepieces"
-                    name="pieces"
-                    
-                    onChange={this.handleChange}
-                  />
-                </FormGroup>
-              </Col>
-
-              <Col md={3} xs={6}>
+            <Row>
+            <Col md={3} xs={6}>
                 <FormGroup>
                   <Label for="examplefeet">Feet</Label>
                   <Input
@@ -66,6 +56,17 @@ class Formsheet extends React.Component {
                   <Input
                     id="examplebundle"
                     name="bundle"
+                    
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+              </Col>
+
+               <Col md={3} xs={6}><FormGroup>
+                  <Label for="examplepieces">Pieces</Label>
+                  <Input
+                    id="examplepieces"
+                    name="pieces"
                     
                     onChange={this.handleChange}
                   />
