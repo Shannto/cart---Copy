@@ -44,6 +44,7 @@ class Formsheet extends React.Component {
                     id="examplepieces"
                     name="pieces"
                     autoComplete="off"
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
