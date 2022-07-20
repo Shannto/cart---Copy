@@ -48,13 +48,13 @@ class Tonsheet extends React.Component {
         <div className="container">
           
           <Col md={12} className="h5 mx-auto ">
-            <p className="text-center mt-2">Cash memo: Ton</p>
+            <p className="text-center mt-1">Cash memo: Ton</p>
           </Col>
           {/* <Col md={12} className="text-center"><Controller/></Col> */}
 
 
 
-          <Form className="my-2" onSubmit={this.handleSubmit}>
+          <Form className="my-1" onSubmit={this.handleSubmit}>
             <Row>
 
             <Col md={2} xs={6}><FormGroup>

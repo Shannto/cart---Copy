@@ -30,13 +30,13 @@ class Formsheet extends React.Component {
         <div className="container">
           
           <Col md={12} className="h5 mx-auto ">
-            <p className="text-center mt-2">Cash memo: Bundle</p>
+            <p className="text-center mt-1">Cash memo: Bundle</p>
           </Col>
           {/* <Col md={12} className="text-center"><Controller /> */}
 
 
 
-          <Form className="my-2" onSubmit={this.handleSubmit}>
+          <Form className="my-1" onSubmit={this.handleSubmit}>
             <Row>
             <Col md={3} xs={6}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>

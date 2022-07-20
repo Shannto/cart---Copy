@@ -24,7 +24,7 @@ class Control extends React.Component{
 
     render(){
         return(
-                <div className='text-center my-3'>
+                <div className='text-center mt-2'>
                      <input type="radio" name="bundleS" onChange={this.handleRadio} checked={this.state.bundleS} className='mx-2' />Bundle
                     
                     <input type="radio" name="tonS" onChange={this.handleRadio} checked={this.state.tonS} className='mx-2' />Ton
