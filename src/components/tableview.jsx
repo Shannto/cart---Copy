@@ -2,21 +2,26 @@ import React from 'react';
 
 import { Input, Button, Table, Container } from 'reactstrap';
 
-const RowItem = ({ todo }) => (
+const RowItem = ({ todo,deleteItem }) => (
 	<tr>
+		
 		<td>{todo.pieces}</td>
 		<td>{todo.feet}</td>
 		<td>{todo.mm}</td>
 		<td>{todo.bundle}</td>
 		<td>{todo.price}</td>
+		<td><button className='btn btn-sm btn-outline-danger' onClick={(e)=>deleteItem(todo)}>
+			Delete</button></td>
+		
 		
 	</tr>
 );
 
 
 
-const TableView = ({ todos,total,viewTotal }) => (
+const TableView = ({ todos,total,viewTotal,deleteItem}) => (
 	<Container>
+		<p className='h3 text-center' >Total = {total}</p>
 	<Table>
 		<thead>
 			<tr>
@@ -25,6 +30,7 @@ const TableView = ({ todos,total,viewTotal }) => (
 				<th>MM</th>
 				<th>Bundle</th>
 				<th>Price</th>
+				<th>#</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -32,6 +38,9 @@ const TableView = ({ todos,total,viewTotal }) => (
 				<RowItem
 					key={todo.id}
 					todo={todo}
+					deleteItem={deleteItem}
+					
+					
 				/>
 
 			))}
@@ -40,7 +49,7 @@ const TableView = ({ todos,total,viewTotal }) => (
 		
 	</Table>
 	
-	<p className='h3 text-center' >Total = {total}</p>
+	
 	</Container>
 	
 );

@@ -55,7 +55,18 @@ class Tonsheet extends React.Component {
 
 
           <Form className="my-2" onSubmit={this.handleSubmit}>
-            <Row> 
+            <Row>
+
+            <Col md={2} xs={6}><FormGroup>
+                  <Label for="examplepieces">Pieces</Label>
+                  <Input
+                    id="examplepieces"
+                    name="pieces"
+                    autoComplete="off"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+              </Col> 
 
             <Col md={2} xs={6}>
                 <FormGroup>
@@ -81,16 +92,7 @@ class Tonsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={2} xs={6}><FormGroup>
-                  <Label for="examplepieces">Pieces</Label>
-                  <Input
-                    id="examplepieces"
-                    name="pieces"
-                    
-                    onChange={this.handleChange}
-                  />
-                </FormGroup>
-              </Col>
+              
 
 
               <Col md={2} xs={6}>

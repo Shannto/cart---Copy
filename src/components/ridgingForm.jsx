@@ -30,7 +30,7 @@ class Ridgingsheet extends React.Component {
         <div className="container">
           
           <Col md={12} className="h5 mx-auto ">
-            <p className="text-center mt-2">Cash memo: Ridging</p>
+            <p className="text-center mt-2">Cash memo: Others</p>
           </Col>
           
           <Form className="my-2" onSubmit={this.handleSubmit}>
@@ -39,6 +39,18 @@ class Ridgingsheet extends React.Component {
                   <Input
                     id="examplepieces"
                     name="pieces"
+                    autoComplete="off"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+              </Col>
+
+              <Col md={3} xs={4}>
+                <FormGroup>
+                  <Label for="exampleunit">Unit Prices</Label>
+                  <Input
+                    id="exampleunit"
+                    name="unit"
                     autoComplete="off"
                     onChange={this.handleChange}
                   />
@@ -56,17 +68,7 @@ class Ridgingsheet extends React.Component {
                 </FormGroup>
               </Col>
 
-              <Col md={3} xs={4}>
-                <FormGroup>
-                  <Label for="exampleunit">Unit Prices</Label>
-                  <Input
-                    id="exampleunit"
-                    name="unit"
-                    
-                    onChange={this.handleChange}
-                  />
-                </FormGroup>
-              </Col>
+              
 
               <Col md={4}>
                 <FormGroup>

@@ -29,9 +29,9 @@ class Control extends React.Component{
                     
                     <input type="radio" name="tonS" onChange={this.handleRadio} checked={this.state.tonS} className='mx-2' />Ton
 
-                    <input type="radio" name="ridgingS" onChange={this.handleRadio} checked={this.state.ridgingS} className='mx-2' />Ridging
+                    <input type="radio" name="ridgingS" onChange={this.handleRadio} checked={this.state.ridgingS} className='mx-2' />Others
 
-                    <Button onClick={this.props.resetForm} className="mx-2 btn-danger btn-sm"> Reset</Button>
+                    <button onClick={this.props.resetForm} className="mx-2 btn btn-outline-success btn-sm"> Reset</button>
 
                     
 

@@ -53,6 +53,14 @@ class Index extends Component {
     })
   }
 
+  deleteItem = (item) => {
+		const todos = this.state.todos.filter(todo =>item.id !=todo.id);
+		this.setState(
+      { todos ,
+      total:this.state.total-item.price});
+	};
+
+
   render() {
     return (
       <div>
@@ -74,6 +82,7 @@ class Index extends Component {
         <TableView
 				todos={this.state.todos} total={this.state.total}
         viewTotal={this.viewTotal}
+        deleteItem={this.deleteItem}
 			/>
 
 
