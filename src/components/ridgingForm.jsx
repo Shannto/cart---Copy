@@ -40,6 +40,7 @@ class Ridgingsheet extends React.Component {
                     id="examplepieces"
                     name="pieces"
                     autoComplete="off"
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
@@ -52,6 +53,7 @@ class Ridgingsheet extends React.Component {
                     id="exampleunit"
                     name="unit"
                     autoComplete="off"
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
@@ -62,7 +64,7 @@ class Ridgingsheet extends React.Component {
                   <Input
                     id="examplemm"
                     name="mm"
-                    
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>

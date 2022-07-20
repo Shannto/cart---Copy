@@ -63,6 +63,7 @@ class Tonsheet extends React.Component {
                     id="examplepieces"
                     name="pieces"
                     autoComplete="off"
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
@@ -74,7 +75,7 @@ class Tonsheet extends React.Component {
                   <Input
                     id="examplefeet"
                     name="feet"
-                    
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
@@ -86,7 +87,7 @@ class Tonsheet extends React.Component {
                   <Input
                     id="examplemm"
                     name="mm"
-                    
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
@@ -101,7 +102,7 @@ class Tonsheet extends React.Component {
                   <Input
                     id="examplebundle"
                     name="bundle"
-                    
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>

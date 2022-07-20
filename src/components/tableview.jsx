@@ -21,6 +21,7 @@ const RowItem = ({ todo,deleteItem }) => (
 
 const TableView = ({ todos,total,viewTotal,deleteItem}) => (
 	<Container>
+		
 		<p className='h3 text-center' >Total = {total}</p>
 	<Table>
 		<thead>

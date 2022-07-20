@@ -57,7 +57,7 @@ class Formsheet extends React.Component {
                   <Input
                     id="examplefeet"
                     name="feet"
-                    
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
@@ -69,7 +69,7 @@ class Formsheet extends React.Component {
                   <Input
                     id="examplebundle"
                     name="bundle"
-                    
+                    type="tel"
                     onChange={this.handleChange}
                   />
                 </FormGroup>
