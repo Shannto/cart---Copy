@@ -45,7 +45,6 @@ class Tonsheet extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
           
           <Col md={12} className="h5 mx-auto ">
             <p className="text-center mt-1">Cash memo: Ton</p>
@@ -54,7 +53,7 @@ class Tonsheet extends React.Component {
 
 
 
-          <Form className="my-1" onSubmit={this.handleSubmit}>
+          <Form className="my-2" onSubmit={this.handleSubmit}>
             <Row>
 
             <Col md={2} xs={6}><FormGroup>
@@ -125,7 +124,7 @@ class Tonsheet extends React.Component {
                 
                 <Button type='submit' >Add more</Button>
               </Col>
-                </Row></Form></div></div>)}
+                </Row></Form></div>)}
 }
 
 export default Tonsheet;

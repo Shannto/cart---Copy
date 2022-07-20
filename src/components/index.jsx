@@ -65,7 +65,7 @@ class Index extends Component {
     return (
       <div>
         
-          
+          <div className="container">
         <Control createTodo={this.createTodo} resetForm={this.resetForm} />
 
 
@@ -86,7 +86,7 @@ class Index extends Component {
 			/>
 
 
-      
+</div>
       </div>
     )
   }

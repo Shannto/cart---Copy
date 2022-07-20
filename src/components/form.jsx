@@ -27,16 +27,14 @@ class Formsheet extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
-          
           <Col md={12} className="h5 mx-auto ">
-            <p className="text-center mt-1">Cash memo: Bundle</p>
+            <p className="text-center">Cash memo: Bundle</p>
           </Col>
           {/* <Col md={12} className="text-center"><Controller /> */}
 
 
 
-          <Form className="my-1" onSubmit={this.handleSubmit}>
+          <Form className="my-2" onSubmit={this.handleSubmit}>
             <Row>
             <Col md={3} xs={6}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
@@ -77,18 +75,18 @@ class Formsheet extends React.Component {
 
                
 
-              <Col md={2} xs={6}>
+              <Col md={3} xs={6}>
                 <FormGroup>
                   <Label for="exampleprice">Price</Label>
                   <Input id="exampleprice" name="price" value={this.state.price} />
                 </FormGroup>
               </Col>
-              <Col md={1} >
+              <Col md={12} className="d-flex justify-content-end">
                 
-                  <Label for="exampleprice"></Label>
-                <Button type='submit'>Add more</Button>
+                  
+                <Button type='submit' >Add more</Button>
                 
-              </Col></Row></Form></div></div>)}
+              </Col></Row></Form></div>)}
 }
 
 export default Formsheet;
