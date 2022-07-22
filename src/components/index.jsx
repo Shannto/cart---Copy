@@ -68,7 +68,9 @@ class Index extends Component {
   if(event.key==="Enter")
     {this.setState(
       {total:this.state.total+parseInt(event.target.value)}
-      )}
+      )
+      event.target.value=""
+    }
   };
 
 reverseList=(event)=>{
