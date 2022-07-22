@@ -55,7 +55,7 @@ const TableView = ({
                   onClick={reverseList}
                   className="btn btn-outline-info py-0 px-0 mb-0 h2"
                 >
-                  sort ⇅
+                  sort&nbsp;⇅
                 </button>
               </th>
             </tr>
