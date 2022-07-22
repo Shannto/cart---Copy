@@ -47,7 +47,7 @@ class Tonsheet extends React.Component {
       <div>
           
           <Col md={12} className="h5 mx-auto ">
-            <p className="text-center mt-1">Cash memo: Ton</p>
+            <p className="text-center">Cash memo: Ton</p>
           </Col>
           {/* <Col md={12} className="text-center"><Controller/></Col> */}
 

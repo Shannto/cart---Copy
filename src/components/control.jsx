@@ -22,20 +22,32 @@ class Control extends React.Component{
         )
     }
 
+    resetForm=(event)=>{
+        this.setState({
+            
+              bundleS:true,
+              tonS:false,
+              ridgingS:false,
+              
+          })
+    }   
+
+    twoFunction=(event)=>{
+        this.props.resetForm(event);
+        this.resetForm(event);
+    }
+
     render(){
         return(
             
                 <div className='text-center mt-2'>
                      <input type="radio" name="bundleS" onChange={this.handleRadio} checked={this.state.bundleS} className='mx-2' />Bundle
-                    
+
                     <input type="radio" name="tonS" onChange={this.handleRadio} checked={this.state.tonS} className='mx-2' />Ton
 
                     <input type="radio" name="ridgingS" onChange={this.handleRadio} checked={this.state.ridgingS} className='mx-2' />Others
 
-                    <button onClick={this.props.resetForm} className="mx-2 btn btn-outline-success btn-sm"> Reset</button>
-
-                    
-
+                    <button onClick={this.twoFunction} className="mx-2 btn btn-outline-success btn-sm"> Reset</button>
                     <div>
                         <br />
                         {this.state.bundleS? <Formsheet createTodo={this.props.createTodo}/>:null}
@@ -46,6 +58,7 @@ class Control extends React.Component{
                         {this.state.ridgingS? <Ridgingsheet
                         createTodo={this.props.createTodo}/>:null}
                     </div>
+                    
                 </div>
             
         )

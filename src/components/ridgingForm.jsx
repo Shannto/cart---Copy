@@ -29,7 +29,7 @@ class Ridgingsheet extends React.Component {
       <div>
 
           <Col md={12} className="h5 mx-auto ">
-            <p className="text-center mt-1">Cash memo: Others</p>
+            <p className="text-center">Cash memo: Others</p>
           </Col>
           
           <Form className="my-2" onSubmit={this.handleSubmit}>
