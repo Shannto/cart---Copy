@@ -44,6 +44,7 @@ class Formsheet extends React.Component {
             <Col md={3} xs={6}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
                   <Input
+                  autoFocus
                     id="examplepieces"
                     name="pieces"
                     autoComplete="off"
