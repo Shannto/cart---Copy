@@ -51,7 +51,7 @@ class Tonsheet extends React.Component {
 
 
 
-          <Form className="my-2" onSubmit={this.handleSubmit}>
+          <Form className="my-1" onSubmit={this.handleSubmit}>
           <Col md={12} className="h5 mx-auto ">
             <p className="text-center">Cash memo: Ton
             <Button type='submit' className="btn-sm mx-1">Add more</Button>

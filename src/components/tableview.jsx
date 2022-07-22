@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Input, Button, Table, Container,Row,Col } from "reactstrap";
 
 const RowItem = ({ todo, deleteItem }) => (
@@ -11,10 +11,10 @@ const RowItem = ({ todo, deleteItem }) => (
     <td>{todo.price}</td>
     <td>
       <button
-        className="btn btn-sm btn-outline-danger"
+        className="btn btn-sm "
         onClick={(e) => deleteItem(todo)}
       >
-        Delete
+        ❌
       </button>
     </td>
   </tr>
@@ -30,10 +30,8 @@ const TableView = ({
   handleLabour,
 }) => (
   <div>
-	
-	
     <Col ><p className="h3 text-center">Total = {total}</p></Col>
-	<Col className="d-flex justify-content-center"><input
+	<Col className="d-flex justify-content-center mb-1"><input
       className="text-center "
       type="tel"
       autoComplete="off"
@@ -44,6 +42,7 @@ const TableView = ({
     <Container>
     <div className="col">
       <div className="row">
+        <div className="col">
         <Table>
           <thead>
             <tr>
@@ -57,7 +56,7 @@ const TableView = ({
                   onClick={reverseList}
                   className="btn btn-outline-info  p-1"
                 >
-                  sort⇅
+                  sort ⇅
                 </button>
               </th>
             </tr>
@@ -79,6 +78,7 @@ const TableView = ({
           </tbody>
         </Table>
       </div>
+    </div>
     </div>
   </Container></div>
 );
