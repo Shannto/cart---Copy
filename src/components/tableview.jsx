@@ -42,7 +42,7 @@ const TableView = ({
     <Container>
     <div className="col">
       <div className="row">
-        <div className="col">
+        
         <Table>
           <thead>
             <tr>
@@ -54,7 +54,7 @@ const TableView = ({
               <th>
                 <button
                   onClick={reverseList}
-                  className="btn btn-outline-info  p-1"
+                  className="btn btn-outline-info"
                 >
                   sort ⇅
                 </button>
@@ -79,7 +79,7 @@ const TableView = ({
         </Table>
       </div>
     </div>
-    </div>
+    
   </Container></div>
 );
 
