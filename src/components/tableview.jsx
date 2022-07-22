@@ -31,14 +31,14 @@ const TableView = ({
 }) => (
   <div>
 	<Row>
-	<Col xs={1}><input
+	<Col xs={1} className="d-flex justify-content-start" ><input
       className="text-center"
       type="tel"
       autoComplete="off"
       onKeyPress={handleLabour}
       placeholder="Labour"
     /></Col>
-    <Col xs={11}><p className="h3 text-center">Total = {total}</p></Col>
+    <Col xs={11} className="d-flex justify-content-end"><p className="h3 text-center">Total = {total}</p></Col>
 	</Row>
     <Container>
     <div className="col">
