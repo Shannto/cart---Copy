@@ -40,6 +40,7 @@ class Ridgingsheet extends React.Component {
             <Row> <Col md={3} xs={4}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
                   <Input
+                  autoFocus
                     id="examplepieces"
                     name="pieces"
                     autoComplete="off"

@@ -64,6 +64,7 @@ class Tonsheet extends React.Component {
             <Col md={2} xs={6}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
                   <Input
+                  autoFocus
                     id="examplepieces"
                     name="pieces"
                     autoComplete="off"
