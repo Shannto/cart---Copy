@@ -28,11 +28,15 @@ class Ridgingsheet extends React.Component {
     return (
       <div>
 
-          <Col md={12} className="h5 mx-auto ">
-            <p className="text-center">Cash memo: Others</p>
-          </Col>
+          
           
           <Form className="my-2" onSubmit={this.handleSubmit}>
+          <Col md={12} className="h5 mx-auto ">
+            <p className="text-center">Cash memo: Others
+            <Button type='submit' className="btn-sm mx-1">Add more</Button>
+            </p>
+          </Col>
+
             <Row> <Col md={3} xs={4}><FormGroup>
                   <Label for="examplepieces">Pieces</Label>
                   <Input
@@ -77,11 +81,12 @@ class Ridgingsheet extends React.Component {
                   <Input id="exampleprice" name="price" value={this.state.price} />
                 </FormGroup>
               </Col>
-              <Col className="d-flex justify-content-end">
+              {/* <Col className="d-flex justify-content-end">
             
                 <Button type='submit'>Add more</Button>
                 
-              </Col></Row></Form></div>)}
+              </Col> */}
+              </Row></Form></div>)}
 }
 
 export default Ridgingsheet;

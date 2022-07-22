@@ -35,7 +35,8 @@ class Formsheet extends React.Component {
           <Form className="my-2" onSubmit={this.handleSubmit}>
             
           <Col md={12} className="h5 mx-auto ">
-            <p className="text-center">Cash memo: Bundle <Button type='submit' className="btn-sm">Add more</Button></p>
+            <p className="text-center">Cash memo: Bundle 
+            <Button type='submit' className="btn-sm mx-1">Add more</Button></p>
             
           </Col>
 

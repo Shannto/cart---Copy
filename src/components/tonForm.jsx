@@ -46,14 +46,19 @@ class Tonsheet extends React.Component {
     return (
       <div>
           
-          <Col md={12} className="h5 mx-auto ">
-            <p className="text-center">Cash memo: Ton</p>
-          </Col>
+         
           {/* <Col md={12} className="text-center"><Controller/></Col> */}
 
 
 
           <Form className="my-2" onSubmit={this.handleSubmit}>
+          <Col md={12} className="h5 mx-auto ">
+            <p className="text-center">Cash memo: Ton
+            <Button type='submit' className="btn-sm mx-1">Add more</Button>
+            </p>
+
+          </Col>
+
             <Row>
 
             <Col md={2} xs={6}><FormGroup>
@@ -120,10 +125,10 @@ class Tonsheet extends React.Component {
                 </FormGroup>
                 
               </Col>
-              <Col className="d-flex justify-content-end" >
+              {/* <Col className="d-flex justify-content-end" >
                 
                 <Button type='submit' >Add more</Button>
-              </Col>
+              </Col> */}
                 </Row></Form></div>)}
 }
 
