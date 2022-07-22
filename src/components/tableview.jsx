@@ -32,7 +32,7 @@ const TableView = ({
   <div>
 	<Row>
 	<Col xs={1} className="d-flex justify-content-start" ><input
-      className="text-center"
+      className="text-center input-sm"
       type="tel"
       autoComplete="off"
       onKeyPress={handleLabour}
