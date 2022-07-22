@@ -39,7 +39,7 @@ const TableView = ({
       placeholder="Labour"
     /></Col>
 	
-    <Container>
+    
     
         
         <Table>
@@ -78,7 +78,7 @@ const TableView = ({
         </Table>
       
     
-  </Container></div>
+  </div>
 );
 
 export default TableView;
