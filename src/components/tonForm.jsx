@@ -1,4 +1,5 @@
 import React from "react";
+import { createRef } from "react";
 import { Row, Label, Input, Form, FormGroup, Col, Container,Button } from "reactstrap";
 
 class Tonsheet extends React.Component {
@@ -40,7 +41,23 @@ class Tonsheet extends React.Component {
     event.preventDefault();
     this.props.createTodo(this.state);
     event.target.reset();
+    this.setState({ pieces: 0, feet: 0, mm: 0, bundle: 0,price:0,divisor:0 });
+    
   };
+
+  handleEnter = (event) => {
+    const form = event.target.form;
+    const index = [...form].indexOf(event.target);
+    if (event.key.toLowerCase() === "enter" && event.target.name!=="bundle") {
+      form.elements[index + 1].focus();
+      event.preventDefault();
+    }
+    if (event.key.toLowerCase() === "enter" && event.target.name==="bundle") {
+      form.elements[index - 3].focus();
+      
+    }
+  };
+
 
   render() {
     return (
@@ -54,7 +71,7 @@ class Tonsheet extends React.Component {
           <Form className="my-1" onSubmit={this.handleSubmit}>
           <Col md={12} className="h5 mx-auto ">
             <p className="text-center">Cash memo: Ton
-            <Button type='submit' className="btn-sm mx-1">Add more</Button>
+            <Button type='submit' className="btn-sm mx-1" onKeyDown={this.handleEnter}>Add more</Button>
             </p>
 
           </Col>
@@ -70,6 +87,8 @@ class Tonsheet extends React.Component {
                     autoComplete="off"
                     type="tel"
                     onChange={this.handleChange}
+                    onKeyDown={this.handleEnter}
+                    
                   />
                 </FormGroup>
               </Col> 
@@ -82,6 +101,7 @@ class Tonsheet extends React.Component {
                     name="feet"
                     type="tel"
                     onChange={this.handleChange}
+                    onKeyDown={this.handleEnter}
                   />
                 </FormGroup>
               </Col>
@@ -94,6 +114,7 @@ class Tonsheet extends React.Component {
                     name="mm"
                     type="tel"
                     onChange={this.handleChange}
+                    onKeyDown={this.handleEnter}
                   />
                 </FormGroup>
               </Col>
@@ -109,6 +130,7 @@ class Tonsheet extends React.Component {
                     name="bundle"
                     type="tel"
                     onChange={this.handleChange}
+                    onKeyDown={this.handleEnter}
                   />
                 </FormGroup>
               </Col>

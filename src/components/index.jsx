@@ -107,7 +107,7 @@ reverse:!this.state.reverse
 
         {/* <viewType  bundle={this.state.bundle} ton={this.state.bundle} ridging={this.state.ridging}/> */}
       
-
+        
         <TableView
 				todos={this.state.todos} total={this.state.total}
         viewTotal={this.viewTotal}

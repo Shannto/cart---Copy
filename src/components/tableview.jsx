@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Input, Button, Table, Container,Row,Col } from "reactstrap";
 
 const RowItem = ({ todo, deleteItem }) => (
+  
   <tr>
     <td>{todo.pieces}</td>
     <td>{todo.feet}</td>
@@ -63,16 +64,16 @@ const TableView = ({
           <tbody>
             {reverse
               ? todos
-                  .map((todo) => (
+                  .map((todo) => ( todo.pieces?
                     <RowItem
                       key={todo.id}
                       todo={todo}
                       deleteItem={deleteItem}
-                    />
+                    />:null
                   ))
                   .reverse()
-              : todos.map((todo) => (
-                  <RowItem key={todo.id} todo={todo} deleteItem={deleteItem} />
+              : todos.map((todo) => ( todo.pieces?
+                  <RowItem key={todo.id} todo={todo} deleteItem={deleteItem} />:null
                 ))}
           </tbody>
         </Table>
